@@ -12,7 +12,7 @@
 显卡(GPU)|AMD RX6600
 内存(RAM)|光威 威龙D45 16G DDR4 3200MHz*2
 硬盘(SSD)|威刚 XPGS70BLADE PCIE4.0 1T
-WiFi + BT| Intel AX210
+WiFi + BT| Intel AX211
 
 **功能（functions）**
 
