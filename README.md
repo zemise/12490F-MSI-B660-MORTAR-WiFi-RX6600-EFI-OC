@@ -14,6 +14,12 @@
 硬盘(SSD)|威刚 XPGS70BLADE PCIE4.0 1T
 WiFi + BT| Intel AX211
 
+**镜像**
+
+macOS Monterey 12.5 21G72 Installer for OC/CLOVER/PE三分区原版镜像
+
+来源于：黑果小兵的部落阁
+
 **BIOS设置**
 
 关闭安全启动（一定要关，否则错误代码为drivers XXX at 0 cannot be loaded，我在这个错误卡了很久，得亏Q群内大佬提点才发现）
@@ -30,7 +36,7 @@ WiFi + BT| Intel AX211
 
 **目前进展**
 
-正常进入OC引导界面，点击安装macOS 12.5后，过一会黑屏
+正常进入OC引导界面，点击安装macOS 12.5后，过一会儿黑屏
 
 据Q群大佬反馈是屏幕接口问题，需要改换DP
 
@@ -42,6 +48,12 @@ WiFi + BT| Intel AX211
 
 目前还在配置中，等待
 请自行生成三码
+
+**感谢**
+
+1. 黑苹果安装讨论的各位大佬
+
+2. 兔子
 
 
 
