@@ -5,8 +5,8 @@
       <entry url="file://$PROJECT_DIR$">
         <entryData>
           <resourceRoots>
-            <path value="file://$PROJECT_DIR$/BOOT" />
-            <path value="file://$PROJECT_DIR$/OC" />
+            <path value="file://$PROJECT_DIR$/EFI/BOOT" />
+            <path value="file://$PROJECT_DIR$/EFI/OC" />
           </resourceRoots>
         </entryData>
       </entry>
