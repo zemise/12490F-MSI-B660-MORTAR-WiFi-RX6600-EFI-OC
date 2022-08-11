@@ -12,7 +12,27 @@
 显卡(GPU)|AMD RX6600
 内存(RAM)|光威 威龙D45 16G DDR4 3200MHz*2
 硬盘(SSD)|威刚 XPGS70BLADE PCIE4.0 1T
-WiFi + BT| Intel AX210
+WiFi + BT| Intel AX211
+
+**BIOS设置**
+
+关闭安全启动（一定要关，否则错误代码为drivers XXX at 0 cannot be loaded，我在这个错误卡了很久，得亏Q群内大佬提点才发现）
+
+关闭CSM（启动模式仅UEFI)
+
+关闭快速开机 Fast Boot
+
+关闭MS快速开机
+
+关闭Intel VT-D
+
+关闭CFG Lock
+
+**目前进展**
+
+正常进入OC引导界面，点击安装macOS 12.5后，过一会黑屏
+
+据Q群大佬反馈是屏幕接口问题，需要改换DP
 
 **功能（functions）**
 
