@@ -46,6 +46,8 @@ macOS Monterey 12.5 21G72 Installer for OC/CLOVER/PE三分区原版镜像
 
 **备注（Additional)**
 
+机型：MacPro7,1    Intel Xeon W-3245M CPU @ 3.20 GHz
+
 目前还在配置中，等待
 请自行生成三码
 
