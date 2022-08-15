@@ -73,9 +73,16 @@ Intel Xeon W-3245M CPU3.20 GHz
 
 **感谢(Acknowledgment)**
 
-1. 黑苹果安装讨论的各位大佬
+1. 国光、黑果小兵
+
+1. 黑苹果安装讨论群的各位大佬
 
 2. 兔子
+
+**Link**
+
+* https://apple.sqlsec.com
+* https://blog.daliansky.net
 
 
 

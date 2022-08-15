@@ -7,6 +7,8 @@
           <resourceRoots>
             <path value="file://$PROJECT_DIR$/EFI/BOOT" />
             <path value="file://$PROJECT_DIR$/EFI/OC" />
+            <path value="file://$PROJECT_DIR$/Image" />
+            <path value="file://$PROJECT_DIR$/EFI" />
           </resourceRoots>
         </entryData>
       </entry>
