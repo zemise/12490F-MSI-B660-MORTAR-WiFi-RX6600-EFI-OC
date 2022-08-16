@@ -33,6 +33,16 @@ macOS Monterey 12.5 21G72 Installer for OC/CLOVER/PE三分区原版镜像
 
 **目前进展(Current progress)**
 
+2022/08/16
+
+* AX211蓝牙及WI-FI通过以下三个驱动解决
+
+    BlueToolFixup.kext
+
+    IntelBluetoothFirmware.kext
+
+    BrcmPatchRAM3.kext
+
 2022/08/15
 
 - 已装上macOS 12.5
