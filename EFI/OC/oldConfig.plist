@@ -412,11 +412,47 @@
                     <key>BundlePath</key>
                     <string>AirportItlwm.kext</string>
                     <key>Comment</key>
-                    <string>V2.2.0 | AirportItlwm.kext</string>
+                    <string>V2.1.0 | AirportItlwm.kext</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
                     <string>Contents/MacOS/AirportItlwm</string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string></string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>Any</string>
+                    <key>BundlePath</key>
+                    <string>BlueToolFixup.kext</string>
+                    <key>Comment</key>
+                    <string>V2.6.3</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>ExecutablePath</key>
+                    <string>Contents/MacOS/BlueToolFixup</string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string></string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>Any</string>
+                    <key>BundlePath</key>
+                    <string>IntelBluetoothFirmware.kext</string>
+                    <key>Comment</key>
+                    <string>V2.1.0</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>ExecutablePath</key>
+                    <string>Contents/MacOS/IntelBluetoothFirmware</string>
                     <key>MaxKernel</key>
                     <string></string>
                     <key>MinKernel</key>
@@ -478,6 +514,42 @@
                     <key>PlistPath</key>
                     <string>Contents/Info.plist</string>
                 </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>Any</string>
+                    <key>BundlePath</key>
+                    <string>CpuTopologyRebuild.kext</string>
+                    <key>Comment</key>
+                    <string>V1.1.0</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>ExecutablePath</key>
+                    <string>Contents/MacOS/CpuTopologyRebuild</string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string></string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>Any</string>
+                    <key>BundlePath</key>
+                    <string>CpuTscSync.kext</string>
+                    <key>Comment</key>
+                    <string>V1.0.9</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>ExecutablePath</key>
+                    <string>Contents/MacOS/CpuTscSync</string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string></string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
             </array>
             <key>Block</key>
             <array>
@@ -494,8 +566,6 @@
                     <string></string>
                     <key>MinKernel</key>
                     <string></string>
-                    <key>Strategy</key>
-                    <string>Disable</string>
                 </dict>
             </array>
             <key>Emulate</key>
@@ -847,8 +917,6 @@
                 <false/>
                 <key>AppleXcpmForceBoost</key>
                 <false/>
-                <key>CustomPciSerialDevice</key>
-                <false/>
                 <key>CustomSMBIOSGuid</key>
                 <false/>
                 <key>DisableIoMapper</key>
@@ -860,8 +928,6 @@
                 <key>ExtendBTFeatureFlags</key>
                 <false/>
                 <key>ExternalDiskIcons</key>
-                <false/>
-                <key>ForceAquantiaEthernet</key>
                 <false/>
                 <key>ForceSecureBootScheme</key>
                 <false/>
@@ -941,8 +1007,8 @@
                 <integer>0</integer>
                 <key>DisplayLevel</key>
                 <integer>2147483714</integer>
-                <key>LogModules</key>
-                <string>*</string>
+                <key>SerialInit</key>
+                <false/>
                 <key>SysReport</key>
                 <false/>
                 <key>Target</key>
@@ -971,8 +1037,12 @@
             </array>
             <key>Security</key>
             <dict>
+                <key>AllowNvramReset</key>
+                <false/>
                 <key>AllowSetDefault</key>
                 <true/>
+                <key>AllowToggleSip</key>
+                <false/>
                 <key>ApECID</key>
                 <integer>0</integer>
                 <key>AuthRestart</key>
@@ -997,40 +1067,6 @@
                 <string>Disabled</string>
                 <key>Vault</key>
                 <string>Optional</string>
-            </dict>
-            <key>Serial</key>
-            <dict>
-                <key>Custom</key>
-                <dict>
-                    <key>BaudRate</key>
-                    <integer>115200</integer>
-                    <key>ClockRate</key>
-                    <integer>1843200</integer>
-                    <key>DetectCable</key>
-                    <false/>
-                    <key>ExtendedTxFifoSize</key>
-                    <integer>64</integer>
-                    <key>FifoControl</key>
-                    <integer>7</integer>
-                    <key>LineControl</key>
-                    <integer>3</integer>
-                    <key>PciDeviceInfo</key>
-                    <data>/w==</data>
-                    <key>RegisterAccessWidth</key>
-                    <integer>8</integer>
-                    <key>RegisterBase</key>
-                    <integer>1016</integer>
-                    <key>RegisterStride</key>
-                    <integer>1</integer>
-                    <key>UseHardwareFlowControl</key>
-                    <false/>
-                    <key>UseMmio</key>
-                    <false/>
-                </dict>
-                <key>Init</key>
-                <false/>
-                <key>Override</key>
-                <false/>
             </dict>
             <key>Tools</key>
             <array>
@@ -1110,7 +1146,7 @@
                     <key>revcpu</key>
                     <integer>1</integer>
                     <key>revcpuname</key>
-                    <string>12-Core Intel i5-12490F</string>
+                    <string>Intel i5 12490F</string>
                     <key>rtc-blacklist</key>
                     <data></data>
                 </dict>
@@ -1121,7 +1157,7 @@
                     <key>SystemAudioVolume</key>
                     <data>Rg==</data>
                     <key>boot-args</key>
-                    <string>-v debug=0x100 keepsyms=1 alcid=66</string>
+                    <string>debug=0x100 keepsyms=1 alcid=66</string>
                     <key>csr-active-config</key>
                     <data>AAAAAA==</data>
                     <key>prev-lang:kbd</key>
@@ -1149,7 +1185,7 @@
                 </array>
             </dict>
             <key>LegacyEnable</key>
-            <true/>
+            <false/>
             <key>LegacyOverwrite</key>
             <false/>
             <key>LegacySchema</key>
@@ -1194,7 +1230,7 @@
                 <key>AdviseFeatures</key>
                 <false/>
                 <key>MLB</key>
-                <string>F5K044200QXK3F71M</string>
+                <string>F5K2124044NK3F7FB</string>
                 <key>MaxBIOSVersion</key>
                 <false/>
                 <key>ProcessorType</key>
@@ -1208,9 +1244,9 @@
                 <key>SystemProductName</key>
                 <string>MacPro7,1</string>
                 <key>SystemSerialNumber</key>
-                <string>F5KDMMZWP7QM</string>
+                <string>F5KHGFZZP7QM</string>
                 <key>SystemUUID</key>
-                <string>68C5488A-3590-493D-9E85-FE3536B60E36</string>
+                <string>ADCA4E74-C781-4E33-99E8-F132A693974E</string>
             </dict>
             <key>UpdateDataHub</key>
             <true/>

@@ -45,6 +45,15 @@ macOS Monterey 12.5 21G72 Installer for OC/CLOVER/PE三分区原版镜像
 
 **功能(Functions）**
 
+2022/08/16
+
+- Wi-Fi、蓝牙正常开启
+- Handoff正常使用
+- USB鼠标灵敏度正常
+
+
+- ⚠️ 屏幕亮度不能调节
+
 2022/08/15
 
 - U盘引导正常进入系统
