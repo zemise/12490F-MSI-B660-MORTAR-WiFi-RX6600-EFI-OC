@@ -24,7 +24,7 @@ macOS Monterey 12.5 21G72 Installer for OC/CLOVER/PE三分区原版镜像
 
 关闭
 
-- 安全启动（一定要关，否则错误代码为drivers XXX at 0 cannot be loaded，我在这个错误卡了很久，得亏Q群内大佬提点才发现）
+- 安全启动（一定要关，否则错误代码为Drivers XXX at 0 cannot be loaded，我在这个错误卡了很久，得亏Q群内大佬提点才发现）
 - CSM（启动模式仅UEFI)
 - 快速开机 Fast Boot
 - MS快速开机
