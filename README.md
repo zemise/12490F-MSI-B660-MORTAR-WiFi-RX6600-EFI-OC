@@ -38,6 +38,11 @@ macOS Monterey 12.5 21G72 Installer for OC/CLOVER/PE三分区原版镜像
 
 **目前进展(Current progress)**
 
+2022/08/17
+
+* 根据国光教程，优化独立显卡RX6600
+* 进一步定制化USB端口
+
 2022/08/16
 
 * AX211蓝牙及WI-FI通过以下三个驱动解决
