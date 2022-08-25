@@ -38,6 +38,11 @@ macOS Monterey 12.5 21G72 Installer for OC/CLOVER/PE三分区原版镜像
 
 **目前进展(Current progress)**
 
+2022/08/25
+
+* OC更新至0.8.3
+* 细节优化补充，如overview显示CPU
+
 2022/08/17
 
 * 根据国光教程，优化独立显卡RX6600
