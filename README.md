@@ -38,11 +38,24 @@ macOS Monterey 12.5 21G72 Installer for OC/CLOVER/PE三分区原版镜像
 **目前进展(Current progress)**
 
 2022/09/19
+
 ⚠️ 屏幕亮度不能调节是本身屏幕问题，现在已经由Lunar软件解决，可以自动调节亮度
 
 ⚠️ 现仅存的问题之一是airdrop是不能用
 
 相应截图展示：
+
+![标识](https://user-images.githubusercontent.com/46216418/191049726-feb65f55-2efb-4aee-b150-f38f1957a901.jpg)
+
+![跑分](https://user-images.githubusercontent.com/46216418/191049860-78abe15b-cdad-4056-a322-b0204bf5b16a.jpg)
+
+![跑分2](https://user-images.githubusercontent.com/46216418/191049919-aea3a011-301d-463b-a83d-9c0949cd8777.jpg)
+
+![蓝牙](https://user-images.githubusercontent.com/46216418/191049974-35cfd76d-3bdb-497b-b38f-37ecbd3251d9.jpg)
+
+![Wi-FI](https://user-images.githubusercontent.com/46216418/191049992-518de150-d0a0-4e37-a980-bca6c53a97e7.jpg)
+
+![稳定性](https://user-images.githubusercontent.com/46216418/191050011-ec860b83-76c6-4c6c-b9cc-f713f14310bf.jpg)
 
 
 2022/08/25
@@ -119,6 +132,8 @@ Intel Xeon W-3245M CPU3.20 GHz
 1. 黑苹果安装讨论群的各位大佬
 
 2. 兔子
+
+3. issue的各位
 
 **Link**
 
