@@ -2,7 +2,7 @@
 
 适用于12490F-MSI-B660M-D4-WIFI-MORTAR-技嘉RX6600的黑苹果EFI
 
-**经issue里的兄弟提醒，发现有个很好的EFI(https://github.com/SuperNG6/MSI-B660-Monterey-EFI)，
+**经issue里的兄弟提醒，发现有个很好的EFI：https://github.com/SuperNG6/MSI-B660-Monterey-EFI，
 比我自己制作的流畅许多，十分推荐！所以基本已放弃自己之前的配置啦。我唯一做的调整就是减少了一点自己不必要的驱动，
 以及自己匹配的蓝牙和WI-FI驱动，跑分稍稍也增高了一点点**
 
