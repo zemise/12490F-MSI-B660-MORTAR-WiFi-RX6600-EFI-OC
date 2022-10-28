@@ -37,6 +37,15 @@ macOS Monterey 12.5 21G72 Installer for OC/CLOVER/PE三分区原版镜像
 
 **目前进展(Current progress)**
 
+2022/10/28
+
+更新EFI相关驱动，OTA推送升级至Ventura 13.0
+相应截图如下，目前比较稳定
+
+
+
+
+
 2022/09/19
 
 ⚠️ 屏幕亮度不能调节是本身屏幕问题，现在已经由Lunar软件解决，可以自动调节亮度
