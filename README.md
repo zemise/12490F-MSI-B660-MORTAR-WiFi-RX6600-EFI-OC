@@ -41,7 +41,7 @@ macOS Monterey 12.5 21G72 Installer for OC/CLOVER/PE三分区原版镜像
 
 更新EFI相关驱动，OTA推送升级至Ventura 13.0
 
-相应截图如下，目前比较稳定，会存在软件报错，需要下载新版安装，谨慎升级
+相应截图如下，目前比较稳定，会存在软件报错，需要下载新版安装，或者参照这篇解决办法：https://blog.csdn.net/weixin_41827162/article/details/125163427
 
 ![标识](https://user-images.githubusercontent.com/46216418/198585539-34ed92a6-55cd-40f8-9fa0-a24db02d70f2.jpg)
 
