@@ -47,9 +47,9 @@ macOS Monterey 12.5 21G72 Installer for OC/CLOVER/PE三分区原版镜像
 
 ![标识](https://user-images.githubusercontent.com/46216418/198585539-34ed92a6-55cd-40f8-9fa0-a24db02d70f2.jpg)
 
-![跑分](https://user-images.githubusercontent.com/46216418/198585567-39c57eef-c91d-4255-9b45-a50fe4c8d62b.jpg)
+![跑分](https://user-images.githubusercontent.com/46216418/198823522-6cbe07da-b075-47d3-8ef3-21e53d337b0b.jpg)
 
-![跑分2](https://user-images.githubusercontent.com/46216418/198585577-98154ec1-854e-4bb7-bd0e-de69ba45e2e3.jpg)
+![跑分2](https://user-images.githubusercontent.com/46216418/198823524-54e0f79d-589c-44be-ac5d-605731173756.jpg)
 
 
 
