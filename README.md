@@ -44,16 +44,13 @@ macOS Monterey 12.5 21G72 Installer for OC/CLOVER/PE三分区原版镜像
 相应截图如下，目前比较稳定，会存在软件报错，需要下载新版安装，或者参照这篇解决办法：https://m.sohu.com/a/595559403_120418263/
 
 按这篇操作后，记得在系统的安全与隐私，再点下相应软件仍要打开，这篇文章没有写到这点
-
-![标识](https://user-images.githubusercontent.com/46216418/198585539-34ed92a6-55cd-40f8-9fa0-a24db02d70f2.jpg)
+![标识](https://user-images.githubusercontent.com/46216418/198823854-61bc472a-43b2-4870-8f9b-7835fb053d26.jpg)
 
 ![跑分](https://user-images.githubusercontent.com/46216418/198823522-6cbe07da-b075-47d3-8ef3-21e53d337b0b.jpg)
 
 ![跑分2](https://user-images.githubusercontent.com/46216418/198823524-54e0f79d-589c-44be-ac5d-605731173756.jpg)
 
 ![跑分3](https://user-images.githubusercontent.com/46216418/198823625-f96e050e-e040-43e2-9104-82eb03f366d5.jpg)
-
-
 
 
 
@@ -67,7 +64,6 @@ macOS Monterey 12.5 21G72 Installer for OC/CLOVER/PE三分区原版镜像
 ⚠️ 现仅存的问题之一是airdrop是不能用
 
 相应截图展示：
-![标识](https://user-images.githubusercontent.com/46216418/198823801-6a71b74b-db28-461c-b3ae-4f21916ff5e4.jpg)
 
 ![跑分](https://user-images.githubusercontent.com/46216418/191049860-78abe15b-cdad-4056-a322-b0204bf5b16a.jpg)
 
