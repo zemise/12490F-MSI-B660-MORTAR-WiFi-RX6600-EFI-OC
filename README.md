@@ -67,8 +67,7 @@ macOS Monterey 12.5 21G72 Installer for OC/CLOVER/PE三分区原版镜像
 ⚠️ 现仅存的问题之一是airdrop是不能用
 
 相应截图展示：
-
-![标识](https://user-images.githubusercontent.com/46216418/191049726-feb65f55-2efb-4aee-b150-f38f1957a901.jpg)
+![标识](https://user-images.githubusercontent.com/46216418/198823767-1188709e-09a4-402b-beb6-7385db42921c.jpg)
 
 ![跑分](https://user-images.githubusercontent.com/46216418/191049860-78abe15b-cdad-4056-a322-b0204bf5b16a.jpg)
 
