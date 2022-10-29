@@ -44,6 +44,9 @@ macOS Monterey 12.5 21G72 Installer for OC/CLOVER/PE三分区原版镜像
 相应截图如下，目前比较稳定，会存在软件报错，需要下载新版安装，或者参照这篇解决办法：https://m.sohu.com/a/595559403_120418263/
 
 按这篇操作后，记得在系统的安全与隐私，再点下相应软件仍要打开，这篇文章没有写到这点
+
+![引导界面](https://user-images.githubusercontent.com/46216418/198837052-f7216e74-e3cd-4417-8030-34d014404b86.jpg)
+
 ![标识](https://user-images.githubusercontent.com/46216418/198823854-61bc472a-43b2-4870-8f9b-7835fb053d26.jpg)
 
 ![跑分](https://user-images.githubusercontent.com/46216418/198823522-6cbe07da-b075-47d3-8ef3-21e53d337b0b.jpg)
