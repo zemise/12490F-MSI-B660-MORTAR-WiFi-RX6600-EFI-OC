@@ -2,21 +2,25 @@
 
 适用于12490F-MSI-B660M-D4-WIFI-MORTAR-技嘉RX6600的黑苹果EFI
 
-**经issue里的兄弟提醒，发现有个很好的EFI：https://github.com/SuperNG6/MSI-B660-Monterey-EFI
-比我自己制作的流畅许多，十分推荐！所以基本已放弃自己之前的配置啦。我唯一做的调整就是减少了一点自己不必要的驱动，
-以及自己匹配的蓝牙和WI-FI驱动，跑分稍稍也增高了一点点**
+**进展里偶尔里我用了一些不错的软件，对于折腾黑苹果很有帮助，大家可以看看。大家遇到什么问题，可以发issue，虽不一定及时回复，但可以让我们共同避坑**。
+
+**首先注意：自行更改三码，我没有删除自己的，虽然直接拿去用没关系。**
+
+**目前有部分内容参考借鉴的[EFI](https://github.com/SuperNG6/MSI-B660-Monterey-EFI)，十分推荐！以下是本机详细内容，建议根据自己的macOS版本下载相应的EFI文件。**
+
 
 **本机配置(Hardware)**
 
-
-**配置(Hardware)**|**型号(Model)**
-|------|------|
-处理器(CPU)|Intel i5 12490F
-主板(Mainboard)|MSI-B660M-D4-WIFI-MORTAR
-显卡(GPU)|AMD RX6600
-内存(RAM)|光威 威龙D45 16G DDR4 3200MHz*2
-硬盘(SSD)|威刚 XPGS70BLADE PCIE4.0 1T
-WiFi + BT| Intel AX211
+| **配置(Hardware)** | **型号(Model)**                         |
+| ------------------ | :-------------------------------------- |
+| 处理器(CPU)        | Intel i5 12490F                         |
+| 主板(Mainboard)    | MSI-B660M-D4-WIFI-MORTAR                |
+| 显卡(GPU)          | AMD RX6600                              |
+| 内存(RAM)          | 光威 威龙D45 16G DDR4 3200MHz*2         |
+| 硬盘(SSD)          | 系统盘： 威刚 XPGS70BLADE PCIE4.0 1T    |
+|                    | 附属盘： 爱国者 aigo P7000 Z PCIE4.0 2T |
+|                    | 备份盘：东芝 P300 3T 7200转             |
+| WiFi + BT          | Intel AX211                             |
 
 **镜像(Mirror)**
 
@@ -36,6 +40,20 @@ macOS Monterey 12.5 21G72 Installer for OC/CLOVER/PE三分区原版镜像
 - CFG Lock
 
 **目前进展(Current progress)**
+2023/6/01
+
+儿童节快乐～
+
+正逢618活动，购入了一块爱国者P7000 Z固态，安排！
+
+本次更新EFI相关驱动，OTA推送升级至Ventura 13.4
+
+关于AirDrop，暂时不考虑更换博通网卡，因为有比较好的替代方案。[LANDrop](https://landrop.app)不仅也可以实现传送文件，更是多平台支持，很好。
+
+推荐2个黑苹果软件下载网站，悄悄地(纯个人分享，无利益相关)
+
+1. [推荐01](https://www.macyy.cn)
+2. [推荐02](https://www.macat.vip)
 
 2022/10/28
 
