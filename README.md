@@ -40,6 +40,13 @@ macOS Monterey 12.5 21G72 Installer for OC/CLOVER/PE三分区原版镜像
 - CFG Lock
 
 **目前进展(Current progress)**
+2023/7/26
+更新EFI相关驱动，OTA推送升级至Ventura 13.5
+
+主要修复
+- 蓝牙关闭后无法开启问题
+- 部分声卡问题
+- 某些不知名bug，驱动更新后消失
 
 2023/6/01
 
