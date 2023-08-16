@@ -21,6 +21,7 @@
 |                    | 附属盘： 爱国者 aigo P7000 Z PCIE4.0 2T |
 |                    | 备份盘：东芝 P300 3T 7200转             |
 | WiFi + BT          | Intel AX211                             |
+| WiFi + BT          | BCM94360CD                            |
 
 **镜像(Mirror)**
 
@@ -39,9 +40,34 @@ macOS Monterey 12.5 21G72 Installer for OC/CLOVER/PE三分区原版镜像
 - Intel VT-D
 - CFG Lock
 
+**功能(Function)**
+
+目前该有的都有，趋近完美
+
 **目前进展(Current progress)**
 
+请看最新进展，往期进展仅供参考
+
+2023/8/16
+
+- 无聊购入了一块BCM94360CD网卡，目前隔空投送、随航Get
+注意：如果没有博通的免驱网卡，而为默认网卡为AX211，需要勾选回我取消的Kext。AX211的使用在之前一个版本就已经调试好了，可以放心，Wi-Fi和蓝牙都正常。
+<img width="1176" alt="image" src="https://github.com/zemise/12490F-MSI-B660-MORTAR-WiFi-RX6600-EFI-OC/assets/46216418/9e143845-5965-44cc-97db-b743999ac04f">
+
+- 用Hackintool重新定制了USBPort.kext，除开主板后方的TypeC边的一个USB口不能使用外，其余全正常使用，反复尝试了多次，已经是能达到的最佳状态了
+<img width="1093" alt="image" src="https://github.com/zemise/12490F-MSI-B660-MORTAR-WiFi-RX6600-EFI-OC/assets/46216418/2bdde91f-67bc-4bd2-a7df-85dd40859323">
+
+注意：如果首次使用本EFI安装黑苹果，如果主板和我的一模一样，则无需改动USBPort.kext；但如果不同，建议取消勾选USBPort，而勾选USBToolBox、UTBMap，这里UTPMap其实也是强烈建议自行用USBToolBox定制
+<img width="1174" alt="image" src="https://github.com/zemise/12490F-MSI-B660-MORTAR-WiFi-RX6600-EFI-OC/assets/46216418/e4247ec1-6d56-4980-8abe-cede008fc1c3">
+
+目前kexts总图，供参考
+<img width="1203" alt="image" src="https://github.com/zemise/12490F-MSI-B660-MORTAR-WiFi-RX6600-EFI-OC/assets/46216418/0569cf3f-0b4d-4d1f-a3c1-540da8ed876b">
+
+- 之前瞎整，把OC引导的Windows弄没了，因此加了一条自己的Windows启动路径，如不需要或者不同，请自行修改，影响不大
+<img width="1299" alt="image" src="https://github.com/zemise/12490F-MSI-B660-MORTAR-WiFi-RX6600-EFI-OC/assets/46216418/ccb188fa-b0be-4cb5-988c-0551b08533e5">
+
 2023/7/26
+
 更新EFI相关驱动，OTA推送升级至Ventura 13.5
 
 主要修复
