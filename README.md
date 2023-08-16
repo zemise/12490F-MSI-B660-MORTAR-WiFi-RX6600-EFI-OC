@@ -40,9 +40,20 @@ macOS Monterey 12.5 21G72 Installer for OC/CLOVER/PE三分区原版镜像
 - Intel VT-D
 - CFG Lock
 
-**功能(Function)**
+**功能(Functions)**
 
 目前该有的都有，趋近完美
+
+
+**备注(Additional)**
+
+机型：MacPro7,1  
+
+Intel Xeon W-3245M CPU3.20 GHz
+
+请自行生成三码
+
+
 
 **目前进展(Current progress)**
 
@@ -109,10 +120,6 @@ macOS Monterey 12.5 21G72 Installer for OC/CLOVER/PE三分区原版镜像
 ![跑分3](https://user-images.githubusercontent.com/46216418/198823625-f96e050e-e040-43e2-9104-82eb03f366d5.jpg)
 
 
-
-
-
-
 2022/09/19
 
 ⚠️ 屏幕亮度不能调节是本身屏幕问题，现在已经由Lunar软件解决，可以自动调节亮度
@@ -162,42 +169,6 @@ macOS Monterey 12.5 21G72 Installer for OC/CLOVER/PE三分区原版镜像
 - 正常进入OC引导界面，点击安装macOS 12.5后，过一会儿黑屏
 - 据Q群大佬反馈是屏幕接口问题，需要改换DP
 
-**功能(Functions）**
-
-2022/08/16
-
-- Wi-Fi、蓝牙正常开启
-- Handoff正常使用
-- USB鼠标灵敏度正常
-
-
-- ⚠️ 屏幕亮度不能调节
-
-2022/08/15
-
-- U盘引导正常进入系统
-- 单硬盘引导Win11/MacOS12.5正常进入系统
-- 有线网卡正常
-- 声卡正常
-- Apple ID及iCloud正常
-- HiDPI开启正常
-- 睡眠正常
-- USB键盘鼠标连接正常
-
-
-- ⚠️ 无核显，不能使用随航
-- ⚠️ Wi-Fi、蓝牙无法开启 
-- ⚠️ Handoff、隔空投送无法使用
-- ⚠️ Overview界面不能正常显示CPU
-- ⚠️ USB鼠标疑似不灵敏
-
-**备注(Additional)**
-
-机型：MacPro7,1  
-
-Intel Xeon W-3245M CPU3.20 GHz
-
-请自行生成三码
 
 **感谢(Acknowledgment)**
 
