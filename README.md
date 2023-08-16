@@ -44,7 +44,6 @@ macOS Monterey 12.5 21G72 Installer for OC/CLOVER/PE三分区原版镜像
 
 目前该有的都有，趋近完美
 
-
 **备注(Additional)**
 
 机型：MacPro7,1  
@@ -58,7 +57,7 @@ Intel Xeon W-3245M CPU3.20 GHz
 **目前进展(Current progress)**
 
 请看最新进展，往期进展仅供参考
-
+***
 2023/8/16
 
 - 无聊购入了一块BCM94360CD网卡，目前隔空投送、随航Get
@@ -77,6 +76,15 @@ Intel Xeon W-3245M CPU3.20 GHz
 - 之前瞎整，把OC引导的Windows弄没了，因此加了一条自己的Windows启动路径，如不需要或者不同，请自行修改，影响不大
 <img width="1299" alt="image" src="https://github.com/zemise/12490F-MSI-B660-MORTAR-WiFi-RX6600-EFI-OC/assets/46216418/ccb188fa-b0be-4cb5-988c-0551b08533e5">
 
+  新发现的问题：
+      - 睡眠有点小问题，睡眠后，显示屏虽然可以一直保持睡眠，但主机还是会醒，表现为开关呼吸灯由常亮(醒)➡️闪烁(睡眠)➡️常亮(醒)
+      - 记得以前似乎正常，与升级系统、插上博通网卡可能有关系
+  暂时解决方案：
+      - 从bios界面关闭USB唤醒，上述睡眠问题解决，能稳定睡眠。只是唤醒主机需要点按下电源
+
+  这样还是不够优雅，暂且搁置，有机会就再解决，等等大家的建议
+
+***
 2023/7/26
 
 更新EFI相关驱动，OTA推送升级至Ventura 13.5
@@ -85,7 +93,7 @@ Intel Xeon W-3245M CPU3.20 GHz
 - 蓝牙关闭后无法开启问题
 - 部分声卡问题
 - 某些不知名bug，驱动更新后消失
-
+***
 2023/6/01
 
 儿童节快乐～
@@ -100,7 +108,7 @@ Intel Xeon W-3245M CPU3.20 GHz
 
 1. [推荐01](https://www.macyy.cn)
 2. [推荐02](https://www.macat.vip)
-
+***
 2022/10/28
 
 更新EFI相关驱动，OTA推送升级至Ventura 13.0
@@ -137,37 +145,6 @@ Intel Xeon W-3245M CPU3.20 GHz
 ![Wi-FI](https://user-images.githubusercontent.com/46216418/191049992-518de150-d0a0-4e37-a980-bca6c53a97e7.jpg)
 
 ![稳定性](https://user-images.githubusercontent.com/46216418/191050011-ec860b83-76c6-4c6c-b9cc-f713f14310bf.jpg)
-
-
-2022/08/25
-
-* OC更新至0.8.3
-* 细节优化补充，如overview显示CPU
-
-2022/08/17
-
-* 根据国光教程，优化独立显卡RX6600
-* 进一步定制化USB端口
-
-2022/08/16
-
-* AX211蓝牙及WI-FI通过以下三个驱动解决
-
-    BlueToolFixup.kext
-
-    IntelBluetoothFirmware.kext
-
-    BrcmPatchRAM3.kext
-
-2022/08/15
-
-- 已装上macOS 12.5
-- 根据已有时间机器备份硬盘，导入数据
-
-2022/08/11
-  
-- 正常进入OC引导界面，点击安装macOS 12.5后，过一会儿黑屏
-- 据Q群大佬反馈是屏幕接口问题，需要改换DP
 
 
 **感谢(Acknowledgment)**
