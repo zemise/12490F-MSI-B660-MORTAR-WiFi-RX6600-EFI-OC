@@ -53,6 +53,12 @@ Intel Xeon W-3245M CPU3.20 GHz
 **目前进展(Current progress)**
 
 请看最新进展，往期进展仅供参考
+
+***
+2023/8/19
+- update OpenCore 0.9.4
+- ocvalidate cheack pass 
+
 ***
 2023/8/16
 
@@ -68,9 +74,6 @@ Intel Xeon W-3245M CPU3.20 GHz
 
 目前kexts总图，供参考
 <img width="1203" alt="image" src="https://github.com/zemise/12490F-MSI-B660-MORTAR-WiFi-RX6600-EFI-OC/assets/46216418/0569cf3f-0b4d-4d1f-a3c1-540da8ed876b">
-
-- 之前瞎整，把OC引导的Windows弄没了，因此加了一条自己的Windows启动路径，如不需要或者不同，请自行修改，影响不大
-<img width="1299" alt="image" src="https://github.com/zemise/12490F-MSI-B660-MORTAR-WiFi-RX6600-EFI-OC/assets/46216418/ccb188fa-b0be-4cb5-988c-0551b08533e5">
 
   新发现的问题：
       - 睡眠有点小问题，睡眠后，显示屏虽然可以一直保持睡眠，但主机还是会醒，表现为开关呼吸灯由常亮(醒)➡️闪烁(睡眠)➡️常亮(醒)
