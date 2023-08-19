@@ -57,7 +57,7 @@ Intel Xeon W-3245M CPU3.20 GHz
 ***
 2023/8/19
 - update OpenCore 0.9.4
-- ocvalidate cheack pass 
+- ocvalidate check pass 
 
 ***
 2023/8/16
