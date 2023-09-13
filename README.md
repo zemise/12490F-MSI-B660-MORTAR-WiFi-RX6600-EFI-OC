@@ -27,6 +27,8 @@ macOS Monterey 12.5 21G72 Installer for OC/CLOVER/PE三分区原版镜像
 
 **BIOS设置**
 
+**此处注意bios的版本，使用本EFI请确保bios的版本为7D42v13，如果不是，可能会出现卡安装以及WiFi问题，参照[相关问题](https://github.com/zemise/12490F-MSI_MORTAR-WiFi-RX6600-EFI-OC/issues/19])**
+
 关闭
 
 - 安全启动（一定要关，否则错误代码为Drivers XXX at 0 cannot be loaded，我在这个错误卡了很久，得亏Q群内大佬提点才发现）
