@@ -20,7 +20,9 @@
 | WiFi + BT          | BCM94360CD                            |
 
 **镜像(Mirror)**
+现在可采用：macOS Sequoia
 
+最初：
 macOS Monterey 12.5 21G72 Installer for OC/CLOVER/PE三分区原版镜像
 
 来源于：黑果小兵的部落阁
@@ -42,6 +44,8 @@ macOS Monterey 12.5 21G72 Installer for OC/CLOVER/PE三分区原版镜像
 
 目前该有的都有，趋近完美
 
+- macOS Sequoia系统中 iPhone镜像不可用
+
 **备注(Additional)**
 
 机型：MacPro7,1  
@@ -55,6 +59,16 @@ Intel Xeon W-3245M CPU3.20 GHz
 **目前进展(Current progress)**
 
 请看最新进展，往期进展仅供参考
+
+***
+2024/10/17
+- update OpenCore 1.0.2
+- update macOS Sequoia
+- BCM Wi-Fi patch fix
+- 时隔大半年，一直没更新此EFI，主要是本黑苹果还是很流畅的。此次升级到macOS15，纯属因为想学习swift语言的vapor框架
+- 博通网卡的带来的隔空投送让我恋恋不舍，所以此次更新，也给博通网卡打了补丁，依旧好用(博通网卡的补丁需要自己下载安装OpenCore-Patcher，打上修复，其他参数配置已在EFI写好)。若需要默认网卡，请参照2023年记录
+
+***
 
 ***
 2023/8/19
