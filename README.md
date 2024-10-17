@@ -67,8 +67,7 @@ Intel Xeon W-3245M CPU3.20 GHz
 - BCM Wi-Fi patch fix
 - 时隔大半年，一直没更新此EFI，主要是本黑苹果还是很流畅的。此次升级到macOS15，纯属因为想学习swift语言的vapor框架
 - 博通网卡的带来的隔空投送让我恋恋不舍，所以此次更新，也给博通网卡打了补丁，依旧好用(博通网卡的补丁需要自己下载安装OpenCore-Patcher，打上修复，其他参数配置已在EFI写好)。若需要默认网卡，请参照2023年记录
-
-***
+![截屏2024-10-17 22 56 51](https://github.com/user-attachments/assets/0db9e508-1eff-4ba5-8efc-2c464575b0e0)
 
 ***
 2023/8/19
