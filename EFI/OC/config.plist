@@ -1131,9 +1131,9 @@
                 <key>4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102</key>
                 <dict>
                     <key>revcpu</key>
-                    <integer>1</integer>
+                    <data>AQAAAA==</data>
                     <key>revcpuname</key>
-                    <string>Intel i5 12490F</string>
+                    <string>Intel Core i5-12490F</string>
                     <key>rtc-blacklist</key>
                     <data></data>
                 </dict>
@@ -1148,7 +1148,7 @@
                     <key>bluetoothInternalControllerInfo</key>
                     <data>AAAAAAAAAAAAAAAAAAA=</data>
                     <key>boot-args</key>
-                    <string>darkwake=0 -ctrsmt -wegnoigpu -radcodec agdpmod=pikera alcid=11 revpatch=auto,sbvmm,cpuname amfi=0x80</string>
+                    <string>darkwake=0 -ctrsmt -wegnoigpu -radcodec agdpmod=pikera alcid=11 revpatch=auto,sbvmm,cpuname amfi=0x80 revcpu=1</string>
                     <key>csr-active-config</key>
                     <data>/w8AAA==</data>
                     <key>prev-lang:kbd</key>
@@ -1201,7 +1201,7 @@
                 <key>MaxBIOSVersion</key>
                 <false/>
                 <key>ProcessorType</key>
-                <integer>3842</integer>
+                <integer>1537</integer>
                 <key>ROM</key>
                 <data>AAAAAAAA</data>
                 <key>SpoofVendor</key>

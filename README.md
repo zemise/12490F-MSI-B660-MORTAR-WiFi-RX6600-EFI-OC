@@ -50,7 +50,7 @@ macOS Monterey 12.5 21G72 Installer for OC/CLOVER/PE三分区原版镜像
 
 机型：MacPro7,1  
 
-Intel Xeon W-3245M CPU3.20 GHz
+关于本机处理器显示：Intel Core i5-12490F（实际硬件），机型仍为 MacPro7,1
 
 请自行生成三码
 
@@ -62,6 +62,10 @@ Intel Xeon W-3245M CPU3.20 GHz
 
 ***
 2026/10/20
+- fix CPU name：修复“关于本机”中处理器显示 `3 GHz 未知` 的问题，重启后已正常显示 `Intel Core i5-12490F`
+- 配合现有 RestrictEvents，将 `ProcessorType` 调整为 `0x0601`，`revcpu` 使用 4 字节 Data `01000000`，补充 `revcpu=1` 启动参数和准确的 `revcpuname`；OpenCore、驱动及机型不变
+- 首次登录黑边、转圈偏移：本机 4K DP 显示器使用 `1920×1080 HiDPI / 60Hz` 后实测正常，实际渲染为 `3840×2160`；这是 macOS 显示设置，不是 EFI 补丁，本次未打包显示覆盖或自动缩放后台服务
+- release EFI：仅包含 `EFI/BOOT` 和 `EFI/OC`，公开配置保留空三码及零 ROM，使用前请自行生成；不要覆盖自己 EFI 中的 Windows 引导目录
 - fix sleep / USB wake：修复开启 BIOS USB 唤醒后约 30 秒自动唤醒的问题，现在能保持睡眠，也能通过 USB 无线接收器的键盘、鼠标唤醒
 - 博通 BCM94360CD 蓝牙保持开启，睡眠唤醒后隔空投送、接力均实测正常，终于不用在蓝牙和睡眠之间二选一了
 - 新增 `BluetoothUSBWakePolicy.kext`（仅配置、无可执行代码），为 HS10 内部 Hub、博通 Hub 和蓝牙控制器设置 `kUSBRemoteWakeOverride=false`，保留蓝牙正常使用，USB 键鼠接收器不在匹配范围内
