@@ -61,6 +61,36 @@ Intel Xeon W-3245M CPU3.20 GHz
 请看最新进展，往期进展仅供参考
 
 ***
+2026/10/20
+- fix sleep / USB wake：修复开启 BIOS USB 唤醒后约 30 秒自动唤醒的问题，现在能保持睡眠，也能通过 USB 无线接收器的键盘、鼠标唤醒
+- 博通 BCM94360CD 蓝牙保持开启，睡眠唤醒后隔空投送、接力均实测正常，终于不用在蓝牙和睡眠之间二选一了
+- 新增 `BluetoothUSBWakePolicy.kext`（仅配置、无可执行代码），为 HS10 内部 Hub、博通 Hub 和蓝牙控制器设置 `kUSBRemoteWakeOverride=false`，保留蓝牙正常使用，USB 键鼠接收器不在匹配范围内
+- 禁用原来的全局 `SSDT-GPRW` 及配套重命名，保留 XHCI 的 `acpi-wake-type=01`；新增仅作用于 `\_SB.PC00.XDCI` 的 `SSDT-XDCI-PRW` 和配套重命名，附上 DSL 源码方便参考
+- 开启 `LauncherOption=Full`。在 OpenCore 选择 macOS 后按 `Ctrl+Enter` 保存默认系统；若 BIOS 先进入其他入口，还需将 OpenCore 设为优先启动项
+- ocvalidate 1.0.2 check pass，OpenCore 和其他驱动版本保持不变
+- 清空配置中的三码和 ROM，使用前请自行生成，勿直接覆盖自己的三码
+
+注意：本次在本机 macOS Sequoia 15.4 实测通过，长时间睡眠及其他硬件组合尚未验证。BIOS 需要开启 USB 从 S3 唤醒；此前“关闭 USB 唤醒、只用电源键唤醒”是旧的临时方案。
+
+`BluetoothUSBWakePolicy.kext` 仅在 Darwin 24（macOS 15）加载，并同时按设备 ID 和 `locationID` 精确匹配本机蓝牙链路：
+
+| 设备 | VID:PID | locationID |
+| --- | --- | --- |
+| HS10 内部 USB2.0 Hub | 05e3:0608 | 0x14a00000 |
+| BRCM20702 Hub | 0a5c:4500 | 0x14a10000 |
+| Bluetooth USB Host Controller | 05ac:828d | 0x14a13000 |
+
+如果蓝牙接线、USB 映射或硬件不同，请先用 IORegistry 核对上述值并修改该 kext 的 `Info.plist`，不要照搬。重启后可检查对应 USB 设备的 `kUSBRemoteWakeOverride` 是否为 `false`。此方案针对 USB 键鼠接收器唤醒，蓝牙键鼠唤醒不在本次验证范围。
+
+本次实测时还保留了以下当前用户/当前主机蓝牙偏好。单独设置它未解决自动唤醒问题，其是否为最终方案必需项尚未单独验证：
+
+```sh
+defaults -currentHost write com.apple.Bluetooth RemoteWakeEnabled -bool false
+```
+
+使用前先备份完整 EFI 并保留可启动的备用引导。要撤销本次配置，请恢复自己的完整备份；上述用户偏好可用 `defaults -currentHost delete com.apple.Bluetooth RemoteWakeEnabled` 撤销（此前已设置该项的用户应恢复原值）。
+
+***
 2024/10/17
 - update OpenCore 1.0.2
 - update macOS Sequoia
