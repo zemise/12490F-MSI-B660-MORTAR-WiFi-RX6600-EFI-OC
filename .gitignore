@@ -2,3 +2,13 @@
 .idea/
 # OS
 .DS_Store
+
+# Local identities, diagnostics and rollback copies
+._*
+backups/
+diagnostics/
+SysReport/
+opencore-*.txt
+panic-*.txt
+**/config.before-*.plist
+**/config.*incoming*.plist

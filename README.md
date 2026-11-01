@@ -20,7 +20,7 @@
 | WiFi + BT          | BCM94360CD                            |
 
 **镜像(Mirror)**
-现在可采用：macOS Sequoia
+现在使用：macOS Tahoe 26.7.2。Sequoia 的配置也保留了，不过升级后我没有再回去测试。
 
 最初：
 macOS Monterey 12.5 21G72 Installer for OC/CLOVER/PE三分区原版镜像
@@ -42,15 +42,13 @@ macOS Monterey 12.5 21G72 Installer for OC/CLOVER/PE三分区原版镜像
 
 **功能(Functions)**
 
-目前该有的都有，趋近完美
+目前启动、Wi-Fi、蓝牙、隔空投送、睡眠和 USB 键鼠唤醒正常，声音还没处理，具体看下面最新进展。
 
 - macOS Sequoia系统中 iPhone镜像不可用
 
 **备注(Additional)**
 
 机型：MacPro7,1  
-
-关于本机处理器显示：Intel Core i5-12490F（实际硬件），机型仍为 MacPro7,1
 
 请自行生成三码
 
@@ -59,6 +57,16 @@ macOS Monterey 12.5 21G72 Installer for OC/CLOVER/PE三分区原版镜像
 **目前进展(Current progress)**
 
 请看最新进展，往期进展仅供参考
+
+***
+2026/11/01
+
+- update macOS Tahoe 26.7.2，OpenCore 1.0.8 RELEASE
+- fix Wi-Fi / AirDrop：BCM94360CD 使用 `SimpleBCM 1.0.1`，同时屏蔽 `IOSkywalkFamily` 和 `AppleSkywalkAVB`，不用再打 OCLP 无线补丁
+- fix sleep / USB wake：沿用之前的蓝牙唤醒策略，扩展到 Tahoe，睡眠、USB 键鼠唤醒、蓝牙和隔空投送均正常
+- Tahoe 使用 USBToolBox 1.2.0，保留原来的 USB 映射
+
+参考：[SimpleBCM](https://github.com/laobamac/SimpleBCM)、[无线卡启动解决记录](https://github.com/laobamac/SimpleBCM/issues/6#issuecomment-6541797460)、[同主板 Tahoe EFI](https://github.com/liutf/EFI-MSI-MORTAR-B660M-AmdNavi21-Broadcom-MacOS26Tahoe)。
 
 ***
 2026/10/20
@@ -72,9 +80,6 @@ macOS Monterey 12.5 21G72 Installer for OC/CLOVER/PE三分区原版镜像
 - 禁用原来的全局 `SSDT-GPRW` 及配套重命名，保留 XHCI 的 `acpi-wake-type=01`；新增仅作用于 `\_SB.PC00.XDCI` 的 `SSDT-XDCI-PRW` 和配套重命名，附上 DSL 源码方便参考
 - 开启 `LauncherOption=Full`。在 OpenCore 选择 macOS 后按 `Ctrl+Enter` 保存默认系统；若 BIOS 先进入其他入口，还需将 OpenCore 设为优先启动项
 - ocvalidate 1.0.2 check pass，OpenCore 和其他驱动版本保持不变
-- 清空配置中的三码和 ROM，使用前请自行生成，勿直接覆盖自己的三码
-
-注意：本次在本机 macOS Sequoia 15.4 实测通过，长时间睡眠及其他硬件组合尚未验证。BIOS 需要开启 USB 从 S3 唤醒；此前“关闭 USB 唤醒、只用电源键唤醒”是旧的临时方案。
 
 `BluetoothUSBWakePolicy.kext` 仅在 Darwin 24（macOS 15）加载，并同时按设备 ID 和 `locationID` 精确匹配本机蓝牙链路：
 
@@ -86,13 +91,13 @@ macOS Monterey 12.5 21G72 Installer for OC/CLOVER/PE三分区原版镜像
 
 如果蓝牙接线、USB 映射或硬件不同，请先用 IORegistry 核对上述值并修改该 kext 的 `Info.plist`，不要照搬。重启后可检查对应 USB 设备的 `kUSBRemoteWakeOverride` 是否为 `false`。此方案针对 USB 键鼠接收器唤醒，蓝牙键鼠唤醒不在本次验证范围。
 
-本次实测时还保留了以下当前用户/当前主机蓝牙偏好。单独设置它未解决自动唤醒问题，其是否为最终方案必需项尚未单独验证：
+我还保留了下面这项当前账户、当前主机的蓝牙偏好。之前只改它没解决自动唤醒，最后调好以后也没再单独删掉测试：
 
 ```sh
 defaults -currentHost write com.apple.Bluetooth RemoteWakeEnabled -bool false
 ```
 
-使用前先备份完整 EFI 并保留可启动的备用引导。要撤销本次配置，请恢复自己的完整备份；上述用户偏好可用 `defaults -currentHost delete com.apple.Bluetooth RemoteWakeEnabled` 撤销（此前已设置该项的用户应恢复原值）。
+使用前先备份完整 EFI 并保留可启动的备用引导。要撤销本次配置，请恢复自己的完整备份；上述蓝牙偏好可用 `defaults -currentHost delete com.apple.Bluetooth RemoteWakeEnabled` 撤销（如果之前已经设置过这一项，应恢复原值）。
 
 ***
 2024/10/17
