@@ -65,6 +65,8 @@ macOS Monterey 12.5 21G72 Installer for OC/CLOVER/PE三分区原版镜像
 - fix Wi-Fi / AirDrop：BCM94360CD 使用 `SimpleBCM 1.0.1`，同时屏蔽 `IOSkywalkFamily` 和 `AppleSkywalkAVB`，不用再打 OCLP 无线补丁
 - fix sleep / USB wake：沿用之前的蓝牙唤醒策略，扩展到 Tahoe，睡眠、USB 键鼠唤醒、蓝牙和隔空投送均正常
 - Tahoe 使用 USBToolBox 1.2.0，保留原来的 USB 映射
+- fix CPU performance：恢复 CPUFriend 1.3.0 和原来的定制电源管理数据，7-Zip 单核 / 多核成绩已接近升级前 15.4，睡眠和无线功能复测正常
+- 清理启动菜单：隐藏 NO NAME 和 SIP 选项，Recovery 按空格显示
 
 参考：[SimpleBCM](https://github.com/laobamac/SimpleBCM)、[无线卡启动解决记录](https://github.com/laobamac/SimpleBCM/issues/6#issuecomment-6541797460)、[同主板 Tahoe EFI](https://github.com/liutf/EFI-MSI-MORTAR-B660M-AmdNavi21-Broadcom-MacOS26Tahoe)。
 
