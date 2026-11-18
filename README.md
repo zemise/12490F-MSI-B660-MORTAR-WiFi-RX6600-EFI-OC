@@ -20,7 +20,7 @@
 | WiFi + BT          | BCM94360CD                            |
 
 **镜像(Mirror)**
-现在使用：macOS Tahoe 26.7.2。Sequoia 的配置也保留了，不过升级后我没有再回去测试。
+现在使用：macOS Tahoe 26.7.3（25G342）。Sequoia 的配置也保留了，不过升级后我没有再回去测试。
 
 最初：
 macOS Monterey 12.5 21G72 Installer for OC/CLOVER/PE三分区原版镜像
@@ -57,6 +57,13 @@ macOS Monterey 12.5 21G72 Installer for OC/CLOVER/PE三分区原版镜像
 **目前进展(Current progress)**
 
 请看最新进展，往期进展仅供参考
+
+***
+2026/11/18
+
+- update macOS Tahoe 26.7.3（25G342）。更新后本机出现过 USB 键鼠同时失灵和内核崩溃。停用 Logi Options+ 两个后台并用备用 EFI 停用 SimpleBCM 后仍复发。
+- update 有线网卡驱动 LucyRTL8125Ethernet，从 `1.2.0d50` 更新到正式版 `1.2.4`（内核显示 `1.2.400`）。本机用 U 盘引导测试，经过日常使用和多轮睡眠唤醒后同步到硬盘 EFI。硬盘引导已确认新版驱动和原有 SimpleBCM 正常加载，截至本次记录未再报告失灵。崩溃根因仍待确认。[上游正式版与源码](https://github.com/Mieze/LucyRTL8125Ethernet/releases/tag/v1.2.4)
+- 拔除米家开机卡后，测试中重复的后台唤醒消失。Logi Options+ 目前只恢复主代理，语音后台继续停用观察。这些是本机的硬件与软件测试条件。
 
 ***
 2026/11/01

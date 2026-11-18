@@ -572,7 +572,7 @@
 				<key>BundlePath</key>
 				<string>LucyRTL8125Ethernet.kext</string>
 				<key>Comment</key>
-				<string>V1.2.0d50 | v1.2.0d5</string>
+				<string>Official RELEASE 1.2.4 (1.2.400)</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
